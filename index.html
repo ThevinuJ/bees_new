@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCASBEES - Sri Lanka Travel Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="BCASBEES Logo" class="logo-icon">
+            <span>BCAS<span class="highlight">BEES</span></span>
+        </div>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#contact" class="btn-nav">Book Now</a></li>
+        </ul>
+    </nav>
+
+    <header id="hero" class="hero">
+        <video autoplay muted loop playsinline class="hero-video" poster="https://images.unsplash.com/photo-1546587348-d12660c30c50?q=80&w=1920&auto=format&fit=crop">
+            <source src="video.mp4" type="video/mp4">
+            <img src="https://images.unsplash.com/photo-1546587348-d12660c30c50?q=80&w=1920&auto=format&fit=crop" alt="Sri Lanka Scenery">
+        </video>
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Discover the Untouched <br> Beauty of the Tropics</h1>
+            <p>Experience personalized tours guided by locals who know every hidden gem.</p>
+            <div class="hero-buttons">
+                <a href="#packages" class="btn-hero">Explore Packages</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="profile.png" alt="Guide in Sri Lanka">
+                <div class="experience-badge">
+                    <span class="years">5+</span>
+                    <span>Years of<br>Experience</span>
+                </div>
+            </div>
+            <div class="about-content">
+                <h4>About Your Guide</h4>
+                <h2>Exploring Sri Lanka, <br> One Story at a Time</h2>
+                <p>Hello! I don't just show you the sights; I help you feel the heartbeat of Ceylon. From the misty peaks of Ella to the golden coasts of Mirissa, I specialize in creating authentic experiences that you won't find in a guidebook.</p>
+                <ul class="skills-list">
+                    <li>✅ Government Licensed Guide</li>
+                    <li>✅ Fluent in English & Sinhala</li>
+                    <li>✅ Photography Assistance Included</li>
+                </ul>
+                <a href="https://wa.me/947XXXXXXXX" class="btn-primary">Chat With Me</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="packages" class="packages-section">
+        <div class="section-title">
+            <h2>Curated Travel Experiences</h2>
+            <p>Choose a popular package below, or scroll down to design your own journey.</p>
+        </div>
+
+        <div class="package-grid">
+
+            <div class="tour-card">
+                <div class="card-image">
+                    <img src="maligawa.jpg" alt="Kandy Temple">
+                    <span class="tag-badge">Family Fun</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span><i class="fas fa-clock"></i> 7 Days</span>
+                        <span><i class="fas fa-route"></i> Kandy - Ella - South Coast</span>
+                    </div>
+                    <h3>Family Week of Wonders</h3>
+                    <p>A perfect mix of culture and fun for adults and kids. Visit the Temple of the Tooth and hike Little Adam's Peak.</p>
+                    <button class="btn-outline view-tour-btn" data-tour="family">View Itinerary</button>
+                </div>
+            </div>
+
+            <div class="tour-card">
+                <div class="card-image">
+                    <img src="willpattu.avif" alt="Kingfisher Sri Lanka">
+                    <span class="tag-badge">Nature & Birding</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span><i class="fas fa-clock"></i> 6 Days</span>
+                        <span><i class="fas fa-route"></i> Wetlands & Wilpattu</span>
+                    </div>
+                    <h3>Wings of Paradise</h3>
+                    <p>A specialized tour for nature lovers. Explore the Anawilundawa Sanctuary and Wilpattu National Park.</p>
+                    <button class="btn-outline view-tour-btn" data-tour="birding">View Itinerary</button>
+                </div>
+            </div>
+
+            <div class="tour-card">
+                <div class="card-image">
+                    <img src="jaffna.jpg" alt="Jaffna Temple">
+                    <span class="tag-badge">History & Culture</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span><i class="fas fa-clock"></i> 15 Days</span>
+                        <span><i class="fas fa-route"></i> Jaffna - Mannar - Trinco</span>
+                    </div>
+                    <h3>Northbound Discovery</h3>
+                    <p>Go off the beaten path. Discover the colorful Nallur Kovil, wild donkeys of Mannar, and Trincomalee.</p>
+                    <button class="btn-outline view-tour-btn" data-tour="north">View Itinerary</button>
+                </div>
+            </div>
+
+            <div class="tour-card">
+                <div class="card-image">
+                    <img src="mirissa.avif" alt="Sri Lanka Beach">
+                    <span class="tag-badge">Sun & Sand</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span><i class="fas fa-clock"></i> 14 Days</span>
+                        <span><i class="fas fa-route"></i> Pasikuda - Arugam Bay - Galle</span>
+                    </div>
+                    <h3>Beach Bliss</h3>
+                    <p>The ultimate coastal loop. Relax on the calm sands of Pasikuda and surf in Arugam Bay.</p>
+                    <button class="btn-outline view-tour-btn" data-tour="beach">View Itinerary</button>
+                </div>
+            </div>
+
+            <div class="tour-card">
+                <div class="card-image">
+                    <img src="ella.webp" alt="Nine Arch Bridge">
+                    <span class="tag-badge">Grand Tour</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span><i class="fas fa-clock"></i> 14 Days</span>
+                        <span><i class="fas fa-route"></i> Cultural Triangle - Hill Country</span>
+                    </div>
+                    <h3>Fortnight in Paradise</h3>
+                    <p>The complete Sri Lankan experience. Visit the Vedda tribe, and take the famous train ride to Ella.</p>
+                    <button class="btn-outline view-tour-btn" data-tour="fortnight">View Itinerary</button>
+                </div>
+            </div>
+
+            <div class="tour-card">
+                <div class="card-image">
+                    <img src="NEliya.jpg" alt="Tea Plantation">
+                    <span class="tag-badge">Best Seller</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span><i class="fas fa-clock"></i> 7 Days</span>
+                        <span><i class="fas fa-route"></i> Kandy - Nuwara Eliya - Ella</span>
+                    </div>
+                    <h3>Classic Hill Country</h3>
+                    <p>Experience the misty mountains and tea plantations. Visit the Herbal Gardens and majestic waterfalls.</p>
+                    <button class="btn-outline view-tour-btn" data-tour="classic">View Itinerary</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="custom-tour-banner">
+            <div class="banner-content">
+                <h3>🌏 Don't see exactly what you want?</h3>
+                <p>We specialize in crafting customized, tailor-made itineraries based on your specific interests and budget.</p>
+                <a href="#contact" class="btn-banner">Plan My Custom Trip</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h2>Ready to start your journey?</h2>
+                <p>We specialize in crafting customized, tailor-made itineraries for your Sri Lankan tour. Contact us to start planning.</p>
+                <div class="info-item">
+                    <strong>📞 Phone:</strong> 
+                    <a href="https://wa.me/947XXXXXXXX" style="color: #fff; text-decoration: underline;">+94 7X XXX XXXX</a>
+                </div>
+                <div class="info-item">
+                    <strong>📧 Email:</strong> hello@bcasbees.com
+                </div>
+                <div class="info-item">
+                    <strong>📍 Office:</strong> Colombo, Sri Lanka
+                </div>
+            </div>
+            
+            <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <h3>Send a Message</h3>
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="5" placeholder="Tell us about your trip plan..." required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 BCASBEES. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/947XXXXXXXX?text=Hello!%20I'm%20interested%20in%20a%20tour%20package." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <div id="tour-modal" class="modal">
+        <div class="modal-content-wide">
+            <div class="modal-header-simple">
+                <div>
+                    <h2 id="modal-title">Tour Name</h2>
+                    <p id="modal-subtitle">A journey through paradise.</p>
+                </div>
+                <span class="close-modal">&times;</span>
+            </div>
+            
+            <div class="modal-body-scroll" id="scroll-area">
+                <div id="modal-itinerary-container">
+                    </div>
+            </div>
+
+            <div class="modal-footer-wide">
+                <a href="#contact" class="btn-primary" onclick="closeModal()">Request Quote For This Tour</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 1. Mobile Menu
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        menuToggle.addEventListener('click', () => { navLinks.classList.toggle('active'); });
+
+        // 2. Data with YOUR CUSTOM IMAGE NAMES
+        const tourData = {
+            'family': {
+                title: "Family Week of Wonders",
+                subtitle: "7 Days | Culture, Wildlife & Fun",
+                timeline: [
+                    { day: "Day 1", loc: "Kandy", img: "maligawa.jpg", text: "We welcome you at the airport and head straight to the hill capital, Kandy. Explore the sacred Temple of the Tooth Relic and witness a traditional Kandyan cultural dance performance in the evening." },
+                    { day: "Day 2", loc: "Nuwara Eliya", img: "NEliya.jpg", text: "Journey into the misty tea country. We visit the Royal Botanical Gardens, witness the cascading Ramboda Waterfall, and tour a working Tea Factory to see how Ceylon Tea is made." },
+                    { day: "Day 3", loc: "Ella Adventure", img: "nildiya.jpeg", text: "Head towards the famous mountain village of Ella. Visit the majestic Rawana Falls and explore Nildiya Pokuna, a hidden underground cave pool." },
+                    { day: "Day 4", loc: "Ella Rock & Bridge", img: "ella.webp", text: "Wake up early for a sunrise hike at Ella Rock. Later, walk along the iconic Nine Arch Bridge, a marvel of colonial engineering set amidst the jungle." },
+                    { day: "Day 5-6", loc: "South Coast", img: "mirissa.avif", text: "Relax on the golden beaches of the South. Visit the Turtle Hatchery to see baby turtles, explore the historic Galle Fort, and enjoy a boat ride on the Madu River." },
+                    { day: "Day 7", loc: "Departure", img: "airport.jpg", text: "After a memorable week of family fun, we transfer you to the airport for your departure flight." }
+                ]
+            },
+            'birding': {
+                title: "Wings of Paradise",
+                subtitle: "6 Days | Birding & Nature",
+                timeline: [
+                    { day: "Day 1", loc: "Negombo Lagoon", img: "negombo.jpg", text: "Relax after your flight and enjoy an evening birding session at the Negombo Lagoon, home to diverse waders and water birds." },
+                    { day: "Day 2", loc: "Anawilundawa", img: "anawilundawa.jpeg", text: "Visit the Anawilundawa Sanctuary, a RAMSAR wetland paradise. Spot migratory birds, herons, and egrets in this serene ecosystem." },
+                    { day: "Day 3", loc: "Wilpattu Safari", img: "willpattu.avif", text: "A full-day safari at Wilpattu National Park. Look for the elusive Leopard, Sloth Bear, and a variety of forest birds in Sri Lanka's largest park." },
+                    { day: "Day 4", loc: "Sigiriya Birding", img: "birds.webp", text: "Birdwatching around the Sigiriya and Habarana lakes. You can spot Kingfishers, Eagles, and maybe even wild elephants gathering for water." },
+                    { day: "Day 5", loc: "Colombo Wetlands", img: "beddagana.jpg", text: "Explore the Beddagana Wetland Park, an urban nature reserve, followed by a city tour of Colombo's vibrant streets." },
+                    { day: "Day 6", loc: "Departure", img: "airport.jpg", text: "Transfer to the airport, concluding your birdwatching adventure." }
+                ]
+            },
+            'north': {
+                title: "Northbound Discovery",
+                subtitle: "15 Days | Untouched North",
+                timeline: [
+                    { day: "Day 1", loc: "Negombo", img: "negombo.jpg", text: "Arrive and relax at the coastal town of Negombo. Enjoy a sunset walk on the beach or a boat ride." },
+                    { day: "Day 2-3", loc: "Ancient Kingdoms", img: "anurapura.jpeg", text: "Travel to Anuradhapura, the first capital. Explore ancient stupas and the sacred Bo Tree." },
+                    { day: "Day 4-5", loc: "Mannar", img: "mannar.jpg", text: "Visit the Baobab Tree and Mannar Fort. See the wild donkeys and the unique landscape of Adam's Bridge." },
+                    { day: "Day 6-7", loc: "Jaffna", img: "jaffna.jpg", text: "Discover the vibrant culture of Jaffna. Visit the colorful Nallur Kovil, Jaffna Fort, and take a boat to Delft Island." },
+                    { day: "Day 8-10", loc: "Trincomalee", img: "trinco.webp", text: "Relax on the pristine beaches of Trincomalee. Visit Koneswaram Temple and go snorkeling at Pigeon Island." },
+                    { day: "Day 11-13", loc: "Cultural Triangle", img: "sigirya.png", text: "Climb the Sigiriya Rock Fortress and enjoy an Elephant Safari in Habarana." },
+                    { day: "Day 14-15", loc: "Colombo & Fly", img: "colombo.jpg", text: "City tour of Colombo before heading to the airport." }
+                ]
+            },
+            'beach': {
+                title: "Beach Bliss",
+                subtitle: "14 Days | Sun, Sand & Surf",
+                timeline: [
+                    { day: "Day 1-2", loc: "Sigiriya", img: "sigirya.png", text: "Start with culture. Climb Sigiriya Lion Rock and enjoy a village tour." },
+                    { day: "Day 3-4", loc: "Pasikudah", img: "pasikuda.jpg", text: "Head to the East Coast. Relax on the calm, shallow waters of Pasikudah beach." },
+                    { day: "Day 5-6", loc: "Arugam Bay", img: "arugambay.jpg", text: "Visit the surfer's paradise. Enjoy surfing lessons or a lagoon safari." },
+                    { day: "Day 7-8", loc: "Yala National Park", img: "tiger.jpg", text: "Go on a thrilling jeep safari to spot Leopards, Elephants, and Bears." },
+                    { day: "Day 9-10", loc: "Unawatuna", img: "mirissa.avif", text: "Explore the colonial Galle Fort and relax at Unawatuna beach." },
+                    { day: "Day 11-13", loc: "Colombo", img: "portcity.jpeg", text: "End with shopping and dining in the capital city." },
+                    { day: "Day 14", loc: "Departure", img: "airport.jpg", text: "Transfer to airport." }
+                ]
+            },
+            'fortnight': {
+                title: "Fortnight in Paradise",
+                subtitle: "14 Days | The Grand Tour",
+                timeline: [
+                    { day: "Day 1", loc: "Negombo", img: "negambo.jpg", text: "Welcome to Sri Lanka. Relax at your hotel in Negombo." },
+                    { day: "Day 2-3", loc: "Sigiriya", img: "sigiriya2.jpeg", text: "Climb the 8th wonder of the world, Sigiriya, and hike Pidurangala for sunset." },
+                    { day: "Day 4-5", loc: "Kandy", img: "maligawa.jpg", text: "Visit the Temple of the Tooth and walk through the Royal Botanical Gardens." },
+                    { day: "Day 6-7", loc: "Mahiyanganaya", img: "vedda.jpg", text: "Meet the indigenous Vedda people and go kayaking on Sorabora Lake." },
+                    { day: "Day 8-9", loc: "Ella", img: "ella.webp", text: "Hike Little Adam's Peak and watch the train cross the Nine Arch Bridge." },
+                    { day: "Day 10-11", loc: "Tangalle", img: "talpe.jpg", text: "Enjoy peace and quiet on the pristine beaches of Tangalle." },
+                    { day: "Day 12-13", loc: "Galle", img: "galle.webp", text: "Walk the ramparts of the Dutch Fort and visit a Turtle Hatchery." },
+                    { day: "Day 14", loc: "Departure", img: "airport.jpg", text: "Safe travels back home." }
+                ]
+            },
+            'classic': {
+                title: "Classic Hill Country",
+                subtitle: "7 Days | Tea & Mountains",
+                timeline: [
+                    { day: "Day 1", loc: "Kandy", img: "maligawa.jpg", text: "Start your journey in the cultural capital. Visit the Temple of the Tooth." },
+                    { day: "Day 2", loc: "Nuwara Eliya", img: "NEliya.jpg", text: "Visit a tea plantation and witness the 'Little England' of Sri Lanka." },
+                    { day: "Day 3-4", loc: "Ella Train Ride", img: "ella.webp", text: "Take the famous blue train ride through the mountains. Hike Ella Rock." },
+                    { day: "Day 5-6", loc: "Galle", img: "mirissa.avif", text: "Head down to the coast. Explore the Galle Fort and go on a river safari." },
+                    { day: "Day 7", loc: "Departure", img: "airport.jpg", text: "Transfer to airport." }
+                ]
+            }
+        };
+
+        // 3. Render Zig-Zag Modal
+        const modal = document.getElementById("tour-modal");
+        const closeModalBtn = document.querySelector(".close-modal");
+        const modalTitle = document.getElementById("modal-title");
+        const modalSubtitle = document.getElementById("modal-subtitle");
+        const modalContainer = document.getElementById("modal-itinerary-container");
+        const scrollArea = document.getElementById("scroll-area");
+
+        document.querySelectorAll('.view-tour-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const tourKey = button.getAttribute('data-tour');
+                const data = tourData[tourKey];
+
+                if (data) {
+                    modalTitle.textContent = data.title;
+                    modalSubtitle.textContent = data.subtitle;
+                    modalContainer.innerHTML = ''; // Clear previous content
+                    
+                    data.timeline.forEach(item => {
+                        const row = document.createElement('div');
+                        row.className = 'itinerary-item';
+                        
+                        // Structure: Text Box + Image Box
+                        row.innerHTML = `
+                            <div class="itinerary-text">
+                                <span class="day-label">${item.day}</span>
+                                <h3>${item.loc}</h3>
+                                <p>${item.text}</p>
+                            </div>
+                            <div class="itinerary-img">
+                                <img src="${item.img}" alt="${item.loc}">
+                            </div>
+                        `;
+                        modalContainer.appendChild(row);
+                    });
+
+                    // FIX: Reset scroll to top
+                    modal.style.display = "flex"; 
+                    setTimeout(() => {
+                        scrollArea.scrollTop = 0;
+                    }, 10);
+                }
+            });
+        });
+
+        function closeModal() {
+            modal.style.display = "none";
+        }
+        closeModalBtn.onclick = closeModal;
+        window.onclick = function(event) {
+            if (event.target == modal) { closeModal(); }
+        }
+    </script>
+
+</body>
+</html>
