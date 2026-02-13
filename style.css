@@ -80,7 +80,7 @@ img { max-width: 100%; display: block; }
 .menu-toggle .bar { width: 25px; height: 3px; background-color: #fff; margin: 3px 0; transition: 0.4s; }
 
 /* -------------------------------------------
-   4. HERO SECTION (WITH YOUTUBE IFRAME)
+   4. HERO SECTION (WITH LOCAL VIDEO)
 ------------------------------------------- */
 .hero {
     height: 100vh; width: 100%; position: relative;
@@ -88,22 +88,10 @@ img { max-width: 100%; display: block; }
     text-align: center; overflow: hidden;
 }
 
-.video-background {
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    pointer-events: none; /* Prevents clicking on the video */
-    overflow: hidden;
-    z-index: -2;
-}
-
-.video-background iframe {
-    width: 100vw;
-    height: 56.25vw; /* 16:9 aspect ratio */
-    min-height: 100vh;
-    min-width: 177.77vh; /* 16:9 aspect ratio */
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
+/* Updated for local video.mp4 */
+.hero-video {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    object-fit: cover; z-index: -2;
 }
 
 .hero .overlay {
@@ -114,7 +102,7 @@ img { max-width: 100%; display: block; }
 .hero h1 { font-size: 3.5rem; line-height: 1.2; margin-bottom: 1rem; }
 
 /* -------------------------------------------
-   5. ABOUT US / SERVICES SECTION (UPDATED)
+   5. ABOUT US / SERVICES SECTION
 ------------------------------------------- */
 .about-section { padding: var(--section-padding); background: #fff; }
 
@@ -232,14 +220,30 @@ img { max-width: 100%; display: block; }
 }
 
 /* -------------------------------------------
-   7. CONTACT SECTION
+   7. CONTACT SECTION (UPDATED LAYOUT)
 ------------------------------------------- */
 .contact-section { padding: var(--section-padding); background: var(--secondary-color); color: #fff; }
 .contact-wrapper { display: flex; gap: 4rem; flex-wrap: wrap; }
 .contact-info { flex: 1; min-width: 300px; }
 .contact-info h2 { font-size: 2.5rem; margin-bottom: 1rem; }
 .contact-info p { margin-bottom: 2rem; opacity: 0.8; }
-.info-item { margin-bottom: 1rem; font-size: 1.1rem; }
+
+/* New Flexbox Rules for perfect column alignment */
+.info-item { 
+    margin-bottom: 1.5rem; 
+    font-size: 1.1rem; 
+    display: flex; 
+    align-items: flex-start; 
+    gap: 15px; 
+}
+.info-item strong {
+    min-width: 110px; /* Keeps the icons/labels perfectly aligned vertically */
+    display: inline-block;
+    white-space: nowrap;
+}
+.info-item span {
+    line-height: 1.6;
+}
 
 .contact-form {
     flex: 1; background: #fff; padding: 2.5rem; border-radius: 15px;
@@ -276,7 +280,7 @@ footer { text-align: center; padding: 2rem 5%; background: #002855; color: rgba(
 .whatsapp-float:hover { background-color: #20ba5a; transform: scale(1.1); }
 
 /* -------------------------------------------
-   9. NEW ZIG-ZAG MODAL STYLES
+   9. ZIG-ZAG MODAL STYLES
 ------------------------------------------- */
 .modal {
     display: none; /* Flex via JS */
