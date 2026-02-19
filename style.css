@@ -152,8 +152,8 @@ img { max-width: 100%; display: block; }
 .service-card p {
     color: #555;
     font-size: 0.95rem;
-    line-height: 1.6;
-    text-align: justify; /* This justifies the text in the service cards */
+    line-height: 1.7;
+    text-align: center;
 }
 
 /* -------------------------------------------
@@ -187,7 +187,7 @@ img { max-width: 100%; display: block; }
 }
 .card-meta i { color: var(--primary-color); margin-right: 5px; }
 .tour-card h3 { font-size: 1.4rem; margin-bottom: 0.8rem; color: var(--secondary-color); }
-.tour-card p { font-size: 0.95rem; color: #555; margin-bottom: 1rem; line-height: 1.6; text-align: justify; }
+.tour-card p { font-size: 0.95rem; color: #555; margin-bottom: 1rem; line-height: 1.7; text-align: left; }
 
 .btn-outline {
     margin-top: auto; text-align: center; border: 2px solid var(--primary-color);
@@ -370,7 +370,7 @@ footer { text-align: center; padding: 2rem 5%; background: #002855; color: rgba(
 }
 .itinerary-text p {
     font-size: 1rem; color: #666; line-height: 1.8;
-    text-align: justify; /* This justifies the paragraph text */
+    text-align: left;
 }
 
 /* Footer */
